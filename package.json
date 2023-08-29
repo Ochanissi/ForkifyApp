@@ -2,22 +2,22 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe application",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ochanissi/ForkifyApp.git"
   },
-  "keywords": [
-    "Mirel",
-    "Bitoi"
-  ],
   "author": "Mirel Bitoi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ochanissi/ForkifyApp/issues"
   },
-  "homepage": "https://github.com/Ochanissi/ForkifyApp#readme"
+  "homepage": "https://github.com/Ochanissi/ForkifyApp#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3"
+  }
 }
