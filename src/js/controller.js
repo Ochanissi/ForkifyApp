@@ -11,3 +11,24 @@ const timeout = function (s) {
 // https://forkify-api.herokuapp.com/v2
 
 ///////////////////////////////////////
+
+const showRecipe = async function () {
+  try {
+    const res = await fetch(
+      'https://forkify-api.herokuapp.com/v2/recipes/keke'
+    );
+
+    const data = await res.json();
+
+    console.log(res, data);
+
+    if (!res.ok) {
+      // console.log('fmm res', { res: res.ok });
+      throw new Error(`${data.message} (${res.status})`);
+    }
+  } catch (err) {
+    alert(err);
+  }
+};
+
+showRecipe();
